@@ -1,11 +1,12 @@
 package accountmanagement;
 
-import org.springframework.stereotype.Component;
+import javax.persistence.*;
 
-@Component
+@Entity
 public class Account {
-
-	private int accountID;
+	@Id
+	@GeneratedValue
+	private Long accountID;
 	private String firstName;
 	private String lastName;
 	private String accountNo;
@@ -16,10 +17,10 @@ public class Account {
 		this.accountNo = accountNo;
 	}
 	
-	public int getAccountID() {
+	public Long getAccountID() {
 		return accountID;
 	}
-	public void setAccountID(int accountID) {
+	public void setAccountID(Long accountID) {
 		this.accountID = accountID;
 	}
 	public String getFirstName() {
