@@ -3,18 +3,19 @@ package com.qa.accountmanagement;
 import javax.persistence.*;
 
 @Entity
+@Table(name="account")
 public class Account {
 	@Id
 	@GeneratedValue
 	private Long accountID;
 	
-	@Column
+	@Column(name ="first_name")
 	private String firstName;
 	
-	@Column
+	@Column(name ="last_name")
 	private String lastName;
 	
-	@Column
+	@Column(name ="account_number")
 	private String accountNo;
 	
 	public Account(String firstName, String lastName, String accountNo) {

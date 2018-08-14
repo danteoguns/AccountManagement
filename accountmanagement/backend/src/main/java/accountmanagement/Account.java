@@ -3,18 +3,19 @@ package accountmanagement;
 import javax.persistence.*;
 
 @Entity
+@Table(name="account")
 public class Account {
 	@Id
 	@GeneratedValue
 	private Long accountID;
 	
-	@Column(name ='first_name')
+	@Column(name ="first_name")
 	private String firstName;
 	
-	@Column(name ='last_name')
+	@Column(name ="last_name")
 	private String lastName;
 	
-	@Column(name ='account_number')
+	@Column(name ="account_number")
 	private String accountNo;
 	
 	public Account(String firstName, String lastName, String accountNo) {

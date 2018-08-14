@@ -1,3 +1,6 @@
 accountmanagement/Account.class
 accountmanagement/App.class
 accountmanagement/HomeController.class
+accountmanagement/AccController.class
+accountmanagement/AccService.class
+accountmanagement/AccJdbcRepo.class

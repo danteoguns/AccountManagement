@@ -14,14 +14,14 @@ public class AccController {
 	private AccService service;
 	
 	@RequestMapping(value = "/allaccounts", method = RequestMethod.GET)
-	public List<Object> getAllAccounts() {
+	public List getAllAccounts() {
 		return service.getAllAccounts();
 	}
 	
-	@RequestMapping(value = "/allaccounts/{accountID}", method = RequestMethod.GET)
-	public Account getAccount(@PathVariable Long accountID) {
-		return service.getAccount(accountID);
-	}
+//	@RequestMapping(value = "/allaccounts/{accountID}", method = RequestMethod.GET)
+//	public Account getAccount(@PathVariable Long accountID) {
+//		return service.getAccount(accountID);
+//	}
 	
 	@RequestMapping(value = "/allaccounts", method = RequestMethod.POST)
 	public void addAccount(@RequestBody Account account) {

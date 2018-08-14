@@ -18,10 +18,10 @@ public class AccController {
 		return service.getAllAccounts();
 	}
 	
-	@RequestMapping(value = "/allaccounts/{accountID}", method = RequestMethod.GET)
-	public Account getAccount(@PathVariable Long accountID) {
-		return service.getAccount(accountID);
-	}
+//	@RequestMapping(value = "/allaccounts/{accountID}", method = RequestMethod.GET)
+//	public Account getAccount(@PathVariable Long accountID) {
+//		return service.getAccount(accountID);
+//	}
 	
 	@RequestMapping(value = "/allaccounts", method = RequestMethod.POST)
 	public void addAccount(@RequestBody Account account) {
