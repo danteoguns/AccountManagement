@@ -7,8 +7,14 @@ public class Account {
 	@Id
 	@GeneratedValue
 	private Long accountID;
+	
+	@Column
 	private String firstName;
+	
+	@Column
 	private String lastName;
+	
+	@Column
 	private String accountNo;
 	
 	public Account(String firstName, String lastName, String accountNo) {
@@ -41,5 +47,11 @@ public class Account {
 	public void setAccountNo(String accountNo) {
 		this.accountNo = accountNo;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "Account [accountID=" + accountID + ", firstName=" + firstName + ", lastName=" + lastName
+				+ ", accountNo=" + accountNo + ", getAccountID()=" + getAccountID() + ", getFirstName()="
+				+ getFirstName() + ", getLastName()=" + getLastName() + ", getAccountNo()=" + getAccountNo() + "]";
+	}
 }
